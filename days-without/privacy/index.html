@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Days Without — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #171D1A; --muted: #3F4945; --bg: #F6FBF7; --accent: #0E7A62; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #DEE4E0; --muted: #BEC9C3; --bg: #0E1412; --accent: #4FC3A2; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid color-mix(in srgb, var(--muted) 30%, transparent); margin: 48px 0; }
+</style>
+<script>
+  // Открываем версию на языке браузера, если она есть. Новый язык — новая папка и строка в LANGS.
+  var LANGS = ["en", "ru"];
+  var wanted = (navigator.languages || [navigator.language || "en"]).map(function (l) { return l.slice(0, 2).toLowerCase(); });
+  var found = wanted.filter(function (l) { return LANGS.indexOf(l) >= 0; })[0];
+  if (found && !location.search.includes("choose")) location.replace(found + "/");
+</script>
+</head>
+<body>
+<main>
+<h1>Privacy Policy · Политика конфиденциальности</h1>
+<ul>
+  <li><a href="en/">English</a></li>
+  <li><a href="ru/">Русский</a></li>
+</ul>
+</main>
+</body>
+</html>
